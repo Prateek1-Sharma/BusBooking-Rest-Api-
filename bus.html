@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Bus Booking </h1>
+ 
+
+    <form id="sform" onsubmit="bookBus(event)">
+        <label>
+            Name:<input type="text" id="name">
+        </label>
+        <label>
+            Email:<input type="email" id="email">
+        </label>
+        <label>
+           Phone:<input type="tel" id="phone">
+        </label>
+        
+        <label>
+            Choose Bus:<select id="bus_no">
+                <option>Bus1</option>
+                <option>Bus2</option>
+                <option>Bus3</option>
+            </select>
+        </label>
+        
+        <label>
+           <button type="submit">Book</button>
+        </label>
+    </form>
+    <hr>
+    <label>
+        Filter:<select id="filter">
+            <option>All</option>
+            <option>Bus1</option>
+            <option>Bus2</option>
+            <option>Bus3</option>
+        </select>
+    </label>
+    <ul>
+    </ul>
+    
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js"></script>
+<script src="bus.js"></script>
+
+</html>
